@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+
+        .section {
+            width: 50%;
+            padding: 40px;
+        }
+
+        .left {
+            background: linear-gradient(135deg, #00b4db, #0083b0);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px;
+        }
+
+        .left h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .left p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .right {
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .login-form {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #333;
+            text-align: center;
+        }
+
+        .login-form h2 {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #666;
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            color: #444;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            background-color: #00b4db;
+            border: none;
+            color: white;
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0083b0;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+
+            .section {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .left {
+                text-align: center;
+            }
+
+            .login-form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="left section">
+        <h1>Welcome to the Website</h1>
+        <p>Our company is dedicated to delivering innovative and reliable solutions that meet the evolving needs of our customers. We specialize in providing high-quality products and services across a variety of industries, with a strong focus on customer satisfaction, efficiency, and long-term value. With a team of experienced professionals and a commitment to excellence, we strive to build lasting relationships with our clients while driving growth and innovation in everything we do.</p>
+    </div>
+    <div class="right section">
+        <div class="login-form">
+            <h1>Login</h1>
+            <h2>User Login</h2>
+            <form action="login.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+ 
